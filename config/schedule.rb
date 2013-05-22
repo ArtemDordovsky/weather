@@ -18,6 +18,9 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 1.minutes do
-  runner 'WeatherCreator.new("donetsk","ukraine").save'
+
+set :output, "/home/artemdordovsky/projects/weather/cron.log"
+every 2.minutes do
+  command "rvm use ruby-1.9.3-p374@Weather"
+  runner "WeatherCreator.new('donetsk','ukraine').save"
 end

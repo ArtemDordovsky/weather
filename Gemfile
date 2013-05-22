@@ -6,7 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'whenever', :require => false
+gem 'chronic', :git => 'git@github.com:mojombo/chronic.git'
+gem 'whenever'
 
 
 # Gems used only for assets and not required

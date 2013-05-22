@@ -1,3 +1,8 @@
+require 'rubygems'
+require 'json'
+require 'uri'
+require 'net/http'
+
 class WeatherCreator
   attr_reader :city, :country
 
