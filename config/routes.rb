@@ -1,7 +1,8 @@
 Weather::Application.routes.draw do
   root :to => 'conditions#index'
 
-  resources :conditions
+  resources :conditions, only: :index
+  resource :forecasts, only: :show
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

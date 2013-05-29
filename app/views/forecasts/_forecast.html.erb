@@ -1,0 +1,5 @@
+<% forecast.each do |forecast| %>
+    Date: <%= forecast["date"] %><br />
+    Min temperature: <%= forecast["tempMinC"] %>C<br />
+    Max temperature: <%= forecast["tempMaxC"] %>C<br />
+<% end %>

@@ -1,3 +1,15 @@
-<div><%= render 'condition' %></div>
+<div xmlns="http://www.w3.org/1999/html"><%= render 'condition' %></div>
 
-<span class="graph"><%= @conditions %></span>
+<div>
+  <span class="graph"><%= @conditions %></span>
+</div>
+
+<p id="three_days">Погода на 3 дня
+<div id="forecast_three_days"></div>
+</p>
+
+<div id="date">
+  <%= select_date(date = Date.current, options = {}, html_options = {class: "date"}) %><br />
+  <%= button_tag "show"%>
+  <div id="forecast_of_date"></div>
+</div>
