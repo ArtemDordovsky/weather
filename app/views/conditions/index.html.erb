@@ -4,9 +4,10 @@
   <span class="graph"><%= @conditions %></span>
 </div>
 
-<p id="three_days">Погода на 3 дня
-<div id="forecast_three_days"></div>
-</p>
+<div id="three_days">
+  <h4>Погода на 3 дня</h4>
+  <div id="forecast_three_days" data-vasya="3"></div>
+</div>
 
 <div id="date">
   <%= select_date(date = Date.current, options = {}, html_options = {class: "date"}) %><br />
