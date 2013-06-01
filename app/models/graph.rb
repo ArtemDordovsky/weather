@@ -10,7 +10,7 @@ class Graph
   def save
     @g.title = "My Graph"
     @g.data("Temperature", @temperatures)
-    @g.write('/home/artemdordovsky/projects/weather/app/assets/images/my_graph.png')
+    @g.write('#{Rails.root}/app/assets/images/my_graph.png')
   end
 
 end
