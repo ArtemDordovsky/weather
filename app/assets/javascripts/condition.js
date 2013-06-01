@@ -1,5 +1,4 @@
 $(function(){
-    $(".graph").peity("line", {width: 300, height: 150});
     $('body').on('click', '#three_days', function(){
       var days = 3;
       $.ajax({

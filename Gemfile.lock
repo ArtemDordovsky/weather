@@ -46,6 +46,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    gruff (0.3.7)
     hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
@@ -86,6 +87,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -115,9 +117,11 @@ PLATFORMS
 DEPENDENCIES
   chronic!
   coffee-rails (~> 3.2.1)
+  gruff
   jquery-rails
   pg
   rails (= 3.2.13)
+  rmagick (= 2.13.2)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   whenever

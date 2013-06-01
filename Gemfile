@@ -8,6 +8,8 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'chronic', :git => 'git@github.com:mojombo/chronic.git'
 gem 'whenever'
+gem 'gruff'
+gem 'rmagick', '2.13.2'
 
 
 # Gems used only for assets and not required

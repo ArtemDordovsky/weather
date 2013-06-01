@@ -22,4 +22,5 @@
 every 1.hours do
   command "rvm use ruby-1.9.3-p374@Weather"
   runner "WeatherCreator.new('donetsk','ukraine').save"
+  runner 'Graph.new(Condition.last(30).map(&:temperature).map(&:to_i)).save'
 end
