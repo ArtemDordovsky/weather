@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'json'
-require 'uri'
 require 'net/http'
 
 class WeatherCreator

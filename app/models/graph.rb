@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'gruff'
-
 class Graph
   def initialize(temperatures)
     @temperatures = temperatures
